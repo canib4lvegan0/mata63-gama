@@ -1,0 +1,32 @@
+body {
+    margin: 0 6vw 0 6vw;
+}
+.page {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.space {
+    flex-grow: 1;   
+}
+.vaga {
+    display: flex;
+    flex-grow: 10px;
+    border-radius: 5px;
+    background-color: #00000020;
+    padding: 10px;
+    margin: 20px;
+}
+.vaga img {
+    margin: 10px
+}
+.vaga .info {
+    text-align: left;
+    margin: 10px
+}
+.vaga .info .buttons {
+    text-align: right;
+}
