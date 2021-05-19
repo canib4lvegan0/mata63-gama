@@ -17,8 +17,8 @@ body {
     flex-grow: 10px;
     border-radius: 5px;
     background-color: #00000020;
-    padding: 10px;
     margin: 20px;
+    padding: 10px;
 }
 .vaga img {
     margin: 10px
@@ -29,4 +29,11 @@ body {
 }
 .vaga .info .buttons {
     text-align: right;
+}
+.form {
+    border-radius: 5px;
+    background-color: #00000020;
+    margin: auto;
+    padding: 20px;
+    width: 400px;
 }
