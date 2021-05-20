@@ -25,6 +25,7 @@ body {
 }
 .vaga .info {
     text-align: left;
+    width: 100%;
     margin: 10px
 }
 .vaga .info .buttons {
