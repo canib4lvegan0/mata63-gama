@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PositionController;
+//use App\Http\Controllers\UserController;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +22,10 @@ Route::get('/', function () {
 });
 
 Route::get('/vagas', [PositionController::class, 'index'])->name('positions.index');
+
+Route::get('/cadastroAluno', [RegisterController::class, 'index']);
+Route::post('/cadastroAluno', [RegisterController::class, 'store'])->name('cadastrarAluno');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
