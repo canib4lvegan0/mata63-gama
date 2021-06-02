@@ -1,62 +1,77 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## Equipe Gama
+Sistema de anúncio de vagas de estágio/emprego para Alunos da UFBA.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+*Trabalho Prático da disciplina MATA63 - Engenharia de Software II (DDC-UFBA)*
 
-## About Laravel
+### Membros:
+* Alana Bispo           *(designer)*
+* Jefferson Brito       *(backender)*
+* Luca Argolo           *(frontender)*
+* Roberto Rangel        *(designer)*
+* Robson Sousa          *(backender)*
+_____
+### Processso de Desenvolvimento
+A metodologia utilizada no processo de desenvolvimento é o **SCRUM** (adaptado). As cerimônias estão elencadas abaixo:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+#### Report diários
+* via Grupo da Equipe Gama no Whatsapp, 22h30.
+  * o que fiz?
+  * o que farei amanhã?
+  * quais as dificuldade/impedimentos?
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+#### Product backlog
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+* Backlog
+    * \#1 Como Visitante, gostaria de visualizar vagas disponíveis no sistema
+    * \#2 Como Instituição, gostaria de me cadastrar no sistema
+    * \#3 Como Instituição, gostaria de manter vaga(s) no sistema
+    * \#4 Como Aluno, gostaria de receber uma newsletter periódica
+    * \#5 Como Aluno da UFBA gostaria de me cadastrar no sistema
+    * \#6 Como Visitante, gostaria de visualizar dashboard com as principais indicadores do sistema
+    * \#7 Como Aluno da UFBA, gostaria de me aplicar para uma vaga
+    * \#8 Como Aluno, gostaria de receber notificações sobre novas vagas
+    * \#9 Como Instituição, gostaria de receber noti cações sobre novos candidatos
+    * \#10 Como Usuário, gostaria de efetuar login na área privada utilizando senha criptografada
+    * \#11 Como Usuário, gostaria de optar por autenticação em 2 fatores
+    * \#13 Como Instituição, gostaria de cancelar um anúncio
+    * \#14 Como Instituição, gostaria de atualizar status das vagas de um anúncio
+    * \#15 Como Instituição, gostaria de visualizar relatório sobre meus anúncios
+    * \#16 Como Aluno, gostaria de receber notificações sobre vagas preenchidas
+    * \#17 Como Aluno, gostaria de visualizar uma vaga
 
-## Learning Laravel
+* kamban
+    * Base de conhecimento
+    * To Do (backlog)
+    * To Do (sprint #1)
+    * To Do (sprint #2)
+    * To Do (sprint #3)
+    * Doing
+    * Done
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+#### Sprints
+*duração de 1 semana*
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+#### Roadmap/Entregas
+- spr   int 2: 12/5 a 19/5 -> sprint review 18/05 às 18h30/Planning
+- sprint 3: 19/5 a 26/5 -> sprint review 24/05 às 18h30/Planning
+- sprint 4: 26/5 a 2/6   -> sprint review 01/05 às 18h30/Planning
+_____
+### Tecnologias
+#### Frontend
+- balsamic mokups
+- HTML5 / CSS3
+- Typescript / JS
+- ChartJS
+- Bootstrap
+#### Backend
+Time: Jefferson e Robson
+- PHP
+- MySQL
+### Versionamento
+- Estrutura básica (branchs): backend, frontend, main
+- Os pullrequests serão avaliados(aceitos) por qualquer revisor/a(membro do time) em no máximo um dia.
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Glossário
+* **Aluno UFBA:** usuário cadastrado na plataforma com e-mail da UFBA
+* **Visitante:** qualquer usuário não necessariamente logado no sistema;
+* **Instituição:** instituição (empresa) cadastrada na plataforma.
