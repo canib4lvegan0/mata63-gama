@@ -1,9 +1,10 @@
 <?php
 
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\InstitutionController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PositionController;
-use App\Http\Controllers\InstitutionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,11 @@ Route::get('/vagas', [PositionController::class, 'index'])->name('positions.inde
 Route::get('/instituicao/create', [InstitutionController::class, 'create'])->name('institutions.create');
 
 Route::post('/instituicao', [InstitutionController::class, 'store'])->name('cadastrarInstituicao');
+
+Route::get('/cadastro_aluno', [RegisterController::class, 'index']);
+
+Route::post('/cadastro_aluno', [RegisterController::class, 'store'])->name('cadastrar_aluno');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
