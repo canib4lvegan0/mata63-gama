@@ -23,8 +23,8 @@ Route::get('/', function () {
 
 Route::get('/vagas', [PositionController::class, 'index'])->name('positions.index');
 
-Route::get('/cadastroAluno', [RegisterController::class, 'index']);
-Route::post('/cadastroAluno', [RegisterController::class, 'store'])->name('cadastrarAluno');
+Route::get('/cadastro_aluno', [RegisterController::class, 'index']);
+Route::post('/cadastro_aluno', [RegisterController::class, 'store'])->name('cadastrar_aluno');
 
 Auth::routes();
 
