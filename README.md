@@ -64,7 +64,6 @@ _____
 - ChartJS
 - Bootstrap
 #### Backend
-Time: Jefferson e Robson
 - PHP
 - MySQL
 ### Versionamento
