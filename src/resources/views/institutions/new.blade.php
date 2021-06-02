@@ -59,7 +59,7 @@
         </div>
         <p>Senha: </p>
         <div class="form-group">
-          <input type="password" class="form-control" name="password" placeholder="Insira sua senha" required="required">
+          <input type="password" class="form-control" name="password" placeholder="Insira sua senha" minlength="8" required="required">
         </div>
         <p>Selecione suas areas de contratação: </p>
         <div class="form-group row">
