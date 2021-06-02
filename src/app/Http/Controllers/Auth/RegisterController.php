@@ -44,26 +44,6 @@ class RegisterController extends Controller
     }
 
     /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    protected function validator(Array $data)
-    {
-        /* TODO validate other fields*/
-        return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'course' => ['required', 'string', 'min:4', 'max: 255', 'confirmed'],
-            'registration_number' => ['required', 'string', 'min:8', 'max: 10', 'confirmed'],
-            'semester' => ['required', 'string', 'min:6', 'max: 6', 'confirmed'],
-            'link_social' => ['required', 'string', 'url', 'max: 255', 'confirmed'],
-        ]);
-    }
-
-    /**
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
@@ -81,14 +61,20 @@ class RegisterController extends Controller
 
     protected function store(Request $data)
     {
-//        $val = $this->validator((array) $data);
-//        if ($val->fails()){
-//            return redirect()->to('cadastroAluno')->withErrors($val);
-//        }
 
         if ($this->checkExists($data->email)){
             return redirect()->back()->withInput()->withErrors(["E-mail '".$data->email."' já cadastrado!"]);
         }
+
+        $data->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8',],
+            'course' => ['required', 'string', 'min:4', 'max: 255',],
+            'registration_number' => ['required', 'string', 'min:8', 'max: 10',],
+            'semester' => ['required', 'string', 'min:6', 'max: 6',],
+            'link_social' => ['required', 'string', 'url', 'max: 255',],
+        ]);
 
         /*TODO To implement other fields*/
         User::create([
@@ -102,6 +88,6 @@ class RegisterController extends Controller
         ]);
 
 //        return $data->name . "successfully registered";
-        return view('home');
+        return view('users.home');
     }
 }
