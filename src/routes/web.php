@@ -3,8 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PositionController;
-//use App\Http\Controllers\UserController;
-use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +20,10 @@ Route::get('/', function () {
 });
 
 Route::get('/vagas', [PositionController::class, 'index'])->name('positions.index');
+
+Route::get('/instituicao/create', [InstitutionController::class, 'create'])->name('institutions.create');
+
+Route::post('/instituicao', [InstitutionController::class, 'store'])->name('cadastrarInstituicao');
 
 Route::get('/cadastro_aluno', [RegisterController::class, 'index']);
 Route::post('/cadastro_aluno', [RegisterController::class, 'store'])->name('cadastrar_aluno');
