@@ -7,6 +7,43 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# Passos para rodar o projeto
+
+## Instalar PHP 7.4+
+## Instalar MySQL
+
+## Instalar dependências do projeto (Via Composer)
+
+- `$ cd src/`
+- `$ composer install`
+
+## Criar arquivo de connfiguração de ambiente (.env)
+
+- Copiar conteúdo do `.env.example` para arquivo `.env` e alterar com os dados corretos do ambiente
+
+```
+...
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=sistema_vagas
+DB_USERNAME=root
+DB_PASSWORD=root
+...
+```
+
+## Gerar APP_KEY do arquivo de configuração
+
+- `$ php artisan key:generate`
+
+## Rodar migrations e seeds
+
+- `$ php artisan migrate --seed`
+
+## Rodar servidor
+
+- `$ php artisan serve`
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
